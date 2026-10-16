@@ -46,18 +46,16 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇸🇪 SE 04 - xiaohe
   type: vless
-  server: 94.143.231.146
+  server: 88.216.223.66
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: tcpswed1.figurapn.ru
+  client-fingerprint: firefox
 - name: 🇸🇪 SE 05 - xiaohe
   type: vless
   server: 5.178.109.174
