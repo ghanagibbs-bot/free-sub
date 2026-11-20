@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 ID 01 - xiaohe
+- name: 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaohe
   type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
+  server: radar.cloudflare.com
+  port: 8080
+  uuid: cfa71937-73d5-4eb8-9b25-eadecd944803
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: natan.srpcom.cloud
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /
     headers:
-      Host: natan.srpcom.cloud
+      Host: sh-harand.shcharand00.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 ID 01 - xiaohe
+  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 ID 01 - xiaohe
+  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
